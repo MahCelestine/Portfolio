@@ -12,9 +12,10 @@ const About = () => {
   "Figma",
   ];
 
-  const handleCVClick = () => {
-    window.open('/document/CV_MAHIEUX_Celestine.pdf', '_blank');
-  };
+const handleCVClick = () => {
+  const baseUrl = '/Portfolio/';
+  window.open(`${baseUrl}document/CV_MAHIEUX_Celestine.pdf`, '_blank');
+};
 
   return (
     <section id="about" className="about">
