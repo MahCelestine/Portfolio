@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
+  "homepage": "https://github.com/MahCelestine/Portfolio.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
