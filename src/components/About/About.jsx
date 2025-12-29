@@ -1,4 +1,3 @@
-import React from 'react';
 import { GraduationCap, Palette, Briefcase, FileText } from 'lucide-react';
 import './About.css';
 
@@ -14,28 +13,17 @@ const About = () => {
   ];
 
   const handleCVClick = () => {
-    // À remplacer par le lien réel vers votre CV
     window.open('/document/CV_MAHIEUX_Celestine.pdf', '_blank');
   };
 
   return (
     <section id="about" className="about">
       <div className="about-container">
-        {/* Décorations */}
         <div className="about-decoration">××××××</div>
-        
-        {/* Titre principal */}
         <h2 className="about-title">À PROPOS</h2>
-        
-        {/* Nom */}
         <h3 className="name-title">Célestine Mahieux</h3>
-        
-        {/* Ligne séparatrice */}
         <div className="title-line"></div>
-
-        {/* Grille principale */}
         <div className="about-grid">
-          {/* Section Étudiante - occupe 2 colonnes sur desktop */}
           <div className="student-section">
             <div className="student-header">
               <div className="student-icon">
@@ -49,7 +37,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* Section Compétences - colonne de gauche sur la deuxième ligne */}
           <div className="skills-section">
             <div className="skills-header">
               <div className="skills-icon">
@@ -67,7 +54,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Section Recherche - colonne de droite sur la deuxième ligne */}
           <div className="search-section">
             <div className="search-header">
               <div className="search-icon">

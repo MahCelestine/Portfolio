@@ -1,6 +1,5 @@
-/* Contact Section */
 .contact {
-    background-color: #f4e9de;
+  background-color: #f4e9de;
   padding: var(--space-4xl) 0;
   position: relative;
 }
@@ -67,7 +66,6 @@
   position: relative;
 }
 
-
 .contact-label {
   font-family: var(--font-bebas);
   font-size: 1.5rem;
@@ -114,8 +112,6 @@
   transform: translateY(-2px);
 }
 
-
-/* Decorative elements */
 .contact-decoration {
   font-family: var(--font-alice);
   font-size: 1rem;
@@ -148,7 +144,6 @@
   margin-left: var(--space-lg);
 }
 
-/* Responsive */
 @media (min-width: 768px) {
   .contact-container {
     padding: 0 var(--space-xl);
@@ -171,7 +166,6 @@
     justify-content: space-between;
     align-items: center;
     text-align: left;
-
   }
   
   .contact-label {
