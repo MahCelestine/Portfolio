@@ -1,0 +1,87 @@
+@import 'variables.css';
+@import 'reset.css';
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Styles généraux */
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.section-title {
+  font-family: var(--font-bebas);
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xl);
+  color: var(--color-brown-dark);
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-2xl);
+}
+
+/* Classes utilitaires */
+.text-center {
+  text-align: center;
+}
+
+.mb-4 { margin-bottom: var(--space-md); }
+.mb-6 { margin-bottom: var(--space-lg); }
+.mb-8 { margin-bottom: var(--space-xl); }
+.mb-12 { margin-bottom: var(--space-2xl); }
+.mb-16 { margin-bottom: var(--space-3xl); }
+
+.mt-4 { margin-top: var(--space-md); }
+.mt-8 { margin-top: var(--space-xl); }
+
+.p-4 { padding: var(--space-md); }
+.p-8 { padding: var(--space-xl); }
+.py-8 { padding-top: var(--space-xl); padding-bottom: var(--space-xl); }
+.py-12 { padding-top: var(--space-2xl); padding-bottom: var(--space-2xl); }
+.py-20 { padding-top: var(--space-4xl); padding-bottom: var(--space-4xl); }
+.px-4 { padding-left: var(--space-md); padding-right: var(--space-md); }
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-4 { gap: var(--space-md); }
+.gap-6 { gap: var(--space-lg); }
+.gap-8 { gap: var(--space-xl); }
+
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: 1fr; }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.gap-6 { gap: var(--space-lg); }
+.gap-8 { gap: var(--space-xl); }
+
+.hidden { display: none; }
+
+/* Responsive */
+@media (min-width: 768px) {
+  .md\:flex { display: flex; }
+  .md\:grid { display: grid; }
+  .md\:hidden { display: none; }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  
+  .section-title {
+    font-size: 5rem;
+  }
+}
+
+main {
+  padding-top: 80px; /* Hauteur approximative du header */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
+}

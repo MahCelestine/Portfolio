@@ -1,0 +1,350 @@
+/* About Section */
+.about {
+  background-color: #f4e9de;
+  padding: var(--space-4xl) 0;
+  position: relative;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Décorations */
+.about-decoration {
+  font-family: var(--font-alice);
+  font-size: 1rem;
+  color: var(--color-brown-dark);
+  opacity: 0.3;
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  position: relative;
+}
+
+.about-decoration::before,
+.about-decoration::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-brown-dark);
+  opacity: 0.2;
+}
+
+.about-decoration::before {
+  right: 100%;
+  margin-right: var(--space-lg);
+}
+
+.about-decoration::after {
+  left: 100%;
+  margin-left: var(--space-lg);
+}
+
+/* Titre principal */
+.about-title {
+  font-family: var(--font-bebas);
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  color: var(--color-brown-dark);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+  font-weight: 400;
+}
+
+/* Nom */
+.name-title {
+  font-family: var(--font-alice);
+  font-size: 2.5rem;
+  color: var(--color-brown-dark);
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Ligne séparatrice */
+.title-line {
+  width: 200px;
+  height: 1px;
+  background-color: var(--color-brown-dark);
+  opacity: 0.2;
+  margin: 0 auto var(--space-3xl);
+}
+
+/* Grille principale */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin: 4rem;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* Section Étudiante - occupe 2 colonnes sur desktop */
+.student-section {
+  background-color: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--color-brown-dark);
+  color: var(--color-brown-dark);
+}
+
+@media (min-width: 768px) {
+  .student-section {
+    grid-column: span 2; /* Occupe 2 colonnes */
+  }
+}
+
+.student-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.student-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(185, 200, 154, 0.2); /* Vert très léger */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Couleur verte pour les icônes */
+.student-icon svg {
+  color: #b9c89a !important;
+  stroke: #b9c89a !important;
+}
+
+.student-title {
+  font-family: var(--font-bebas);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: var(--color-brown-dark);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+.student-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+  margin-left: 56px; /* Align with icon */
+  margin-bottom: var(--space-xl);
+}
+
+/* Ligne de séparation */
+.separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-brown-dark);
+  opacity: 0.1;
+  margin: var(--space-xl) 0;
+}
+
+/* Section Compétences */
+.skills-section {
+  background-color: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%; /* Pour que les deux cartes aient la même hauteur */
+  border: 2px solid var(--color-brown-dark);
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.skills-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(185, 200, 154, 0.2); /* Vert très léger */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Couleur verte pour les icônes */
+.skills-icon svg {
+  color: #b9c89a !important;
+  stroke: #b9c89a !important;
+}
+
+.skills-title {
+  font-family: var(--font-bebas);
+  font-size: 1.25rem;
+  color: var(--color-brown-dark);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+.skills-list {
+  margin-left: 56px; /* Align with icon */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+  font-size: 1rem;
+  color: var(--color-gray-700);
+}
+
+.skill-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #b9c89a; /* Vert pour les puces */
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Section Recherche */
+.search-section {
+  background-color: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%; /* Pour que les deux cartes aient la même hauteur */
+  border: 2px solid var(--color-brown-dark);
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(185, 200, 154, 0.2); /* Vert très léger */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Couleur verte pour les icônes */
+.search-icon svg {
+  color: #b9c89a !important;
+  stroke: #b9c89a !important;
+}
+
+.search-title {
+  font-family: var(--font-bebas);
+  font-size: 1.25rem;
+  color: var(--color-brown-dark);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Bouton Voir mon CV */
+.cv-button {
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-cream);
+  background-color: var(--color-brown-dark);
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-left: 56px; /* Align with icon */
+}
+
+.cv-button svg {
+  color: var(--color-cream) !important;
+  stroke: var(--color-cream) !important;
+}
+
+.cv-button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-container {
+    padding: 0 var(--space-xl);
+  }
+  
+  .about-title {
+    font-size: 5rem;
+  }
+  
+  .name-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-decoration {
+    font-size: 1.25rem;
+  }
+  
+  .about-decoration::before,
+  .about-decoration::after {
+    width: 80px;
+  }
+  
+  .student-description,
+  .skills-list,
+  .cv-button {
+    margin-left: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-grid {
+    margin: 2rem;
+  }
+  
+  .student-description,
+  .skills-list,
+  .cv-button {
+    margin-left: 0;
+  }
+  
+  .about-decoration {
+    font-size: 0.875rem;
+    letter-spacing: 0.3em;
+  }
+  
+  .about-decoration::before,
+  .about-decoration::after {
+    width: 40px;
+  }
+}

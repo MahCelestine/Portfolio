@@ -1,0 +1,337 @@
+/* Projects Section */
+.projects {
+  padding: var(--space-4xl) 0;
+  position: relative;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.projects-decoration {
+  font-family: var(--font-alice);
+  font-size: 1rem;
+  color: var(--color-brown-dark);
+  opacity: 0.3;
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  position: relative;
+}
+
+.projects-decoration::before,
+.projects-decoration::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-brown-dark);
+  opacity: 0.2;
+}
+
+.projects-decoration::before {
+  right: 100%;
+  margin-right: var(--space-lg);
+}
+
+.projects-decoration::after {
+  left: 100%;
+  margin-left: var(--space-lg);
+}
+
+.title-line {
+  width: 200px;
+  height: 1px;
+  background-color: var(--color-brown-dark);
+  opacity: 0.2;
+  margin: 0 auto var(--space-3xl);
+}
+
+/* En-tête */
+.projects-header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+}
+
+.projects-title {
+  font-family: var(--font-bebas);
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  color: var(--color-brown-dark);
+  margin-bottom: var(--space-sm);
+  font-weight: 400;
+}
+
+.projects-subtitle {
+  font-family: var(--font-alice);
+  font-size: 1.5rem;
+  color: var(--color-brown-dark);
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: var(--space-3xl);
+}
+
+/* Grille de projets académiques */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Carte de projet - MODIFIÉ selon l'image */
+.project-card {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  border: 2px solid var(--color-brown-dark);
+  padding: var(--space-2xl);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Numéro discret en haut à droite - MODIFIÉ */
+.project-number {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  font-family: var(--font-bebas);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: var(--color-brown-dark);
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+/* Supprimer l'en-tête avec la catégorie dans un badge */
+.project-header {
+  display: none; /* On cache l'ancien header */
+}
+
+/* Catégorie simple - MODIFIÉ */
+.project-category {
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-brown-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: var(--space-xs) 0 var(--space-md) 0;
+  opacity: 0.7;
+  background-color: transparent; /* Pas de fond vert */
+  padding: 0; /* Pas de padding */
+}
+
+.project-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-xl); /* Pour laisser de l'espace pour le numéro */
+}
+
+/* Titre du projet - MODIFIÉ selon l'image */
+.project-title {
+  font-family: var(--font-bebas);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  color: var(--color-brown-dark);
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Description - MODIFIÉ selon l'image */
+.project-description {
+  font-family: var(--font-alice);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-gray-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Section Projets Personnels - inchangé */
+.personal-projects {
+  background-color: var(--color-white);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 2px solid var(--color-brown-dark);
+  padding: var(--space-2xl);
+}
+
+.personal-title {
+  font-family: var(--font-bebas);
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  color: var(--color-brown-dark);
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+
+}
+
+.personal-description {
+  font-family: var(--font-alice);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-gray-700);
+  margin: 0;
+  line-height: 1.6;
+  margin-bottom: var(--space-3xl);
+}
+
+
+.personal-header {
+  margin-bottom: var(--space-2xl);
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Grille des dessins - inchangé */
+.drawings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin: var(--space-2xl) 0;
+}
+
+@media (min-width: 768px) {
+  .drawings-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.drawing-placeholder {
+  aspect-ratio: 1;
+  background-color: #f8f4f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(45, 35, 24, 0.2);
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.drawing-placeholder:hover {
+  border-color: var(--color-brown-dark);
+  background-color: rgba(185, 200, 154, 0.1);
+}
+
+.drawing-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(185, 200, 154, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.drawing-placeholder:hover::before {
+  left: 100%;
+}
+
+.drawing-text {
+  font-family: var(--font-alice);
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive - inchangé */
+@media (min-width: 768px) {
+  .projects-container {
+    padding: 0 var(--space-xl);
+  }
+  
+  .projects-title {
+    font-size: 5rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 1.75rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 3rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .drawings-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur très petit mobile */
+    gap: var(--space-sm);
+  }
+  
+  .project-title {
+    font-size: 1.75rem;
+  }
+}
+
+.project-card {
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.project-card:focus {
+  outline: 2px solid var(--color-brown-dark);
+  outline-offset: 2px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet de focus pour l'accessibilité */
+.project-card:focus-visible {
+  outline: 2px solid var(--color-brown-dark);
+  outline-offset: 4px;
+}
+
+.drawing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: solid 2px var(--color-brown-dark);
+}
