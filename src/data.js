@@ -5,7 +5,7 @@ export const projects = [
     category: "Projet web",
     description: "Réalisé pendant une SAE, en groupe",
     annee: "3ème année",
-    image: "/images/projects/escape-game.jpg",
+    image: "${PUBLIC_URL}/images/projects/escape-game.jpg",
     descriptionLong: "Escape Game est une application réalisée au cour d'une SAE réunisant le parcours web et le parcour Multimédia de MMI, le sujet était de réalisé un escape game sur 3 jours. Sur ce projet, nous avons décidé de créer une application web de pari sur le vole d'un musée, les utilisateurs incarnent le voleurs, après leur premier vol le chrono avant que la sécurité n'arrive se déclenche. Le but de repartir avec le plus de bution possible en récupérant tous les indices et en réussissant les énigmes, si vous n'êtes pas sorti dans les temps vous perdez. Sur la vidéo, vous verrez le site réalisé avec React.",
     lienVideo: "https://youtu.be/I-3JP2-eHnQ"
   },
