@@ -14,10 +14,10 @@ const Contact = () => {
             <div className="contact-item">
               <div className="contact-label">EMAIL</div>
               <a 
-                href="mailto:celestine.mahieux@gmail.com" 
+                href="mailto:celestine.mahieux1@gmail.com" 
                 className="contact-value"
               >
-                celestine.mahieux@gmail.com
+                celestine.mahieux1@gmail.com
               </a>
             </div>
             
