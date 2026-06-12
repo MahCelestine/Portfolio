@@ -33,9 +33,7 @@ const About = () => {
               </div>
               <h4 className="student-title">ÉTUDIANTE BUT MMI</h4>
             </div>
-            <p className="student-description">
-              Je suis étudiante en 3e année BUT MMI (Métiers du Multimédia et de l'Internet)
-              dans le parcours développement web et dispositifs interactifs. Sur mon temps personnel, je fais du dessins digital.
+            <p className="student-description">Étudiante en BUT Métier du Multimédia et de l'Internet (spécialisation Développement Web), j'allie une solide logique back-end à une sensibilité créative que je cultive à travers le dessin digital sur mon temps libre. Ce double profil me permet de comprendre aussi bien les exigences techniques d'un projet que son aspect visuel.
             </p>
           </div>
 
@@ -64,8 +62,7 @@ const About = () => {
               <h4 className="student-title">Recherche</h4>
             </div>
             <p className="student-description">
-              À la recherche d'un stage en développement web pour mettre en pratique
-              mes compétences et découvrir le monde professionnel.
+              Passionnée par le développement back-end, je cherche à mettre à profit mon autonomie technique et ma rigueur pour concevoir des applications performantes, sécurisées et adaptées aux besoins du terrain.
             </p>
             <button
               onClick={handleCVClick}

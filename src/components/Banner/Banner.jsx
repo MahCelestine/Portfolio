@@ -11,29 +11,23 @@ const Banner = () => {
 
   return (
     <section className="banner">
-      {/* Quadrillage de fond */}
       <div className="grid-overlay"></div>
       
       <div className="banner-content">
-        {/* Première ligne de ×××××× */}
         <div className="banner-decoration">××××××</div>
         
-        {/* Titre principal - EN PREMIER */}
         <h1 className="banner-title">PORTFOLIO</h1>
         
-        {/* Années - APRÈS le titre */}
         <div className="year-container">
           <span>2023</span>
           <div className="year-line"></div>
           <span>2026</span>
         </div>
         
-        {/* Sous-titre */}
         <p className="banner-subtitle">
           Créativité, design et développement web
         </p>
         
-        {/* Bouton */}
         <div className="banner-buttons">
           <button 
             onClick={scrollToProjects}
@@ -43,7 +37,6 @@ const Banner = () => {
           </button>
         </div>
         
-        {/* Deuxième ligne de ×××××× */}
         <div className="banner-decoration">××××××</div>
       </div>
     </section>
