@@ -25,7 +25,7 @@ const Banner = () => {
         <div className="year-container">
           <span>2023</span>
           <div className="year-line"></div>
-          <span>2025</span>
+          <span>2026</span>
         </div>
         
         {/* Sous-titre */}

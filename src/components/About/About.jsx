@@ -3,19 +3,20 @@ import './About.css';
 
 const About = () => {
   const skills = [
-    "HTML/CSS",
-  "JavaScript", 
-  "React",
-  "Laravel",      
-  "Livewire",
-  "Wordpress",
-  "Figma",
+    "Laravel",
+    "Livewire",
+    "JavaScript",
+    "Django",
+    "React",
+    "Wordpress",
+    "HTML/CSS/Tailwind",
+    "Figma",
   ];
 
-const handleCVClick = () => {
-  const baseUrl = '/Portfolio/';
-  window.open(`${baseUrl}document/CV_MAHIEUX_Celestine.pdf`, '_blank');
-};
+  const handleCVClick = () => {
+    const baseUrl = '/Portfolio/';
+    window.open(`${baseUrl}document/CV_MAHIEUX_Celestine.pdf`, '_blank');
+  };
 
   return (
     <section id="about" className="about">
@@ -33,7 +34,7 @@ const handleCVClick = () => {
               <h4 className="student-title">ÉTUDIANTE BUT MMI</h4>
             </div>
             <p className="student-description">
-              Je suis étudiante en 3e année BUT MMI (Métiers du Multimédia et de l'Internet) 
+              Je suis étudiante en 3e année BUT MMI (Métiers du Multimédia et de l'Internet)
               dans le parcours développement web et dispositifs interactifs. Sur mon temps personnel, je fais du dessins digital.
             </p>
           </div>
@@ -63,15 +64,15 @@ const handleCVClick = () => {
               <h4 className="student-title">Recherche</h4>
             </div>
             <p className="student-description">
-              À la recherche d'un stage en développement web pour mettre en pratique 
+              À la recherche d'un stage en développement web pour mettre en pratique
               mes compétences et découvrir le monde professionnel.
             </p>
-            <button 
+            <button
               onClick={handleCVClick}
               className="cv-button"
             >
               <FileText size={20} />
-               Voir mon CV
+              Voir mon CV
             </button>
           </div>
         </div>
